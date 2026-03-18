@@ -33,16 +33,16 @@ src/
 
 ## 🔵 Phase 3: First Redux Slice (Practice core concepts)
 
-- [ ] Create `usersSlice.js`
-- [ ] Add:
-  - [ ] `initialState`
-  - [ ] basic reducers (add/remove user)
+- [x] Create `usersSlice.js`
+- [x] Add:
+  - [x] `initialState`
+  - [x] basic reducers (add/remove user)
 
-- [ ] Export:
-  - [ ] actions
-  - [ ] reducer
+- [x] Export:
+  - [x] actions
+  - [x] reducer
 
-- [ ] Add slice to store
+- [x] Add slice to store
 
 ---
 

@@ -1,14 +1,10 @@
-import { useState } from "react";
+import { Users } from "@/features/users/Users";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <section id="center"></section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      <h1 className="text-2xl font-bold text-center">Redux Dashboard</h1>
+      <Users />
     </>
   );
 }
