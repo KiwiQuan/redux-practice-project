@@ -2,12 +2,19 @@ import { createSlice } from "@reduxjs/toolkit";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchUsers = createAsyncThunk("users/fetchUsers", async () => {
-  const response = await axios.get(
-    "https://jsonplaceholder.typicode.com/users",
-  );
-  return response.data;
-});
+export const fetchUsers = createAsyncThunk(
+  "users/fetchUsers",
+  async (_, thunkAPI) => {
+    try {
+      const response = await axios.get(
+        "https://jsonplaceholder.typicode.com/users",
+      );
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  },
+);
 
 const usersSlice = createSlice({
   name: "users",
@@ -35,7 +42,7 @@ const usersSlice = createSlice({
     });
     builder.addCase(fetchUsers.rejected, (state, action) => {
       state.loading = false;
-      state.error = action.error.message;
+      state.error = action.error.message || action.payload;
     });
   },
 });

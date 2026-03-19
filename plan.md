@@ -48,24 +48,24 @@ src/
 
 ## 🟣 Phase 4: Connect Redux to UI
 
-- [ ] Use `useSelector` to read state
-- [ ] Use `useDispatch` to update state
-- [ ] Display users in UI
-- [ ] Add button (shadcn) to dispatch actions
+- [x] Use `useSelector` to read state
+- [x] Use `useDispatch` to update state
+- [x] Display users in UI
+- [x] Add button (shadcn) to dispatch actions
 
 ---
 
 ## 🔴 Phase 5: Async Data (KEY PART 🔥)
 
-- [ ] Create `createAsyncThunk` (fetch users API)
-- [ ] Add `extraReducers`:
-  - [ ] pending → loading = true
-  - [ ] fulfilled → store data
-  - [ ] rejected → error state
+- [x] Create `createAsyncThunk` (fetch users API)
+- [x] Add `extraReducers`:
+  - [x] pending → loading = true
+  - [x] fulfilled → store data
+  - [x] rejected → error state
 
-- [ ] Show:
-  - [ ] loading spinner
-  - [ ] error message
+- [x] Show:
+  - [x] loading spinner
+  - [x] error message
 
 👉 This is the **most important Redux skill** ()
 
