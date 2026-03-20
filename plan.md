@@ -73,15 +73,15 @@ src/
 
 ## 🟠 Phase 6: Build Dashboard UI
 
-- [ ] Create layout:
-  - [ ] Sidebar
-  - [ ] Header
-  - [ ] Main content area
+- [x] Create layout:
+  - [x] Sidebar
+  - [x] Header
+  - [x] Main content area
 
-- [ ] Use shadcn components:
-  - [ ] Button
-  - [ ] Card
-  - [ ] Table
+- [x] Use shadcn components:
+  - [x] Button
+  - [x] Card
+  - [x] Table
 
 ---
 
