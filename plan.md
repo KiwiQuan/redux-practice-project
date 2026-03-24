@@ -87,7 +87,7 @@ src/
 
 ## 🟡 Phase 7: Display API Data
 
-- [ ] Show users in a table
+- [x] Show users in a table
 - [ ] Add:
   - [ ] loading state UI
   - [ ] empty state UI

@@ -3,9 +3,7 @@ import { DashboardLayout } from "@/layout/DashboardLayout";
 function App() {
   return (
     <>
-      <DashboardLayout>
-        <Users />
-      </DashboardLayout>
+      <DashboardLayout />
     </>
   );
 }
