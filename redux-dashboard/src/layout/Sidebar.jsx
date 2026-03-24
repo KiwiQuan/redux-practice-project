@@ -1,4 +1,5 @@
 import React from "react";
+import { Users as UsersIcon, FileText } from "lucide-react";
 export function Sidebar({ activeTab, setActiveTab }) {
   return (
     <aside className="w-64 h-screen border-r bg-muted/40 p-4">
@@ -6,15 +7,17 @@ export function Sidebar({ activeTab, setActiveTab }) {
 
       <nav className="flex flex-col gap-2">
         <button
-          className={`text-left px-3 py-2 rounded-md transition-colors ${activeTab === "users" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}
+          className={`flex items-center gap-2 px-3 py-2 rounded-md transition-colors ${activeTab === "users" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}
           onClick={() => setActiveTab("users")}
         >
+          <UsersIcon size={16} />
           Users
         </button>
         <button
-          className={`text-left px-3 py-2 rounded-md transition-colors ${activeTab === "posts" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}
+          className={`flex items-center gap-2 px-3 py-2 rounded-md transition-colors ${activeTab === "posts" ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}
           onClick={() => setActiveTab("posts")}
         >
+          <FileText size={16} />
           Posts
         </button>
       </nav>
